@@ -1,0 +1,46 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+.encabezado{
+        background-color: rgb(163, 165, 42);
+        width: 100%;
+    }
+body{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.contenido__letras{
+    width: 80%;
+    display: flex;
+     
+    background-color: burlywood ;
+}
+.contenido__letras__izquierda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+.contenido__letras_derecha{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contenido__letras_derecha_mensajes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenido__letras_derecha_img{
+    width: 100%;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+}
