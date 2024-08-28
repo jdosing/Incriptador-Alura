@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incripta tu texto</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    
+</head>
+<header class="encabezado">
+    <nav>
+        <img class="encabezado__img" src="./assets/img/Logo.png" alt="">
+    </nav>
+</header>
+<body class="contenido">
+    
+    <section class="contenido__letras">
+        <div class="contenido__letras__izquierda">
+            
+                    <input id="textoOriginal" class="texto__traducir" placeholder="Introduce el texto aqui..." type="text" >
+                    <div class="botones">
+                    <button onclick="incriptarTexto()">Encriptar</button>
+                    <button onclick="desencriptar_texto()">Desencriptar</button>
+                    </div>                
+                    
+            
+        </div>
+        <div class="contenido__letras_derecha">
+
+            <textarea id="textoIncriptado" oninput="verificar_texto()" rows="10" cols="10" readonly></textarea>
+
+            <button id="copia" onclick="copiar_texto()" class="copia">Copiar</button>
+            
+            <div id="div_oculto" class="contenido__letras_derecha_mensajes">
+                <img class="contenido__letras_derecha_img" src="./assets/img/Muñeco.png" alt="">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
